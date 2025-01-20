@@ -1,0 +1,59 @@
+body {
+    font-family: 'Quicksand';
+}
+
+header{
+    margin: 0 auto;
+    max-width: 1200px;
+    border: 1px solid red;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+.school{
+    font-weight: 700px;
+    font-size: 2rem;
+    color: rgb(17, 17, 17);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+ 
+}
+
+.nav_bar{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    gap: 200px;
+   
+    
+}
+ul{
+    display: flex;
+    gap: 32px;
+
+}
+.list{
+    list-style: none;
+}
+.list_contenet{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.btn{
+    width: 197px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: rgb(254, 163, 1);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    border: none;
+}
