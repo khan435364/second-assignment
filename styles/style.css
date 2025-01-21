@@ -6,54 +6,131 @@ header{
     margin: 0 auto;
     max-width: 1200px;
     border: 1px solid red;
-
 }
 
-nav{
+
+/* nav section */
+nav {
     display: flex;
+    align-items: center;
     justify-content: space-between;
- 
-}
-.school{
-    font-weight: 700px;
-    font-size: 2rem;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo h2 {
     color: rgb(17, 17, 17);
-}
-
-.logo{
-    display: flex;
-    align-items: center;
- 
-}
-
-.nav_bar{
-    display: flex;
-    align-items: center;
-    margin: auto;
-    gap: 200px;
-   
-    
-}
-ul{
-    display: flex;
-    gap: 32px;
-
-}
-.list{
-    list-style: none;
-}
-.list_contenet{
-    text-decoration: none;
+    font-size: 2rem;
     font-weight: 700;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 186px;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    cursor: pointer;
+  }
+  .menu_list li {
     font-size: 1.25rem;
-}
-.btn{
-    width: 197px;
-    height: 50px;
+    font-weight: 500;
+  }
+  
+  .btn-primary {
+    padding: 10px;
     border-radius: 12px;
-    background-color: rgb(254, 163, 1);
+    background: rgb(254, 163, 1);
+    color: rgb(255, 255, 255);
     font-size: 1.25rem;
     font-weight: 600;
-    color: rgb(255, 255, 255);
+    width: 197px;
+    height: 50px;
     border: none;
-}
+    cursor: pointer;
+  }
+  hr {
+    border: 0.5px solid rgb(254, 163, 1);
+    visibility: hidden;
+  }
+  .bar-icon {
+    visibility: hidden;
+  }
+
+  /* banner */
+  .banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .banner_header{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: rgb(17, 17, 17);
+    margin-bottom: 24px;
+  }
+  .banner_pra{
+    color: rgb(17, 17, 17);
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+ .banner_button{
+    width: 197px;
+    height: 50px;
+    background-color: rgb(17, 17, 17);
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: rgb(255, 255, 255);
+ }
+ 
+.banner_img img {
+    width: 100%;
+  }
+  .banner_content{
+    width: 600px;
+  }
+
+
+/* media */
+  @media screen and (max-width: 576px ) {
+   /* nav */
+   .banner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+    hr {
+        visibility: visible;
+      }
+      .bar-icon {
+        visibility: visible;
+        font-size: 1.8rem;
+      }
+      .logo h2{
+        display: none;
+      }
+      .menu_list ,.btn-primary{
+       display: none;
+      }
+      .banner_header{
+        width: 100%;
+        text-align: center;
+      }
+      .banner_pra{
+        text-align: center;
+        width: 100%;
+   }
+   .banner_content{
+    width: 100%;
+   }
+ .logo{
+    justify-content: space-between;
+ }
+ /* end */
+
+    
+  }
