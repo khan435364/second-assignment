@@ -226,7 +226,7 @@ nav {
   box-sizing: border-box;
   width: 100%;
 }
-.stories-box img {
+.story_box img {
   border-radius: 16px 16px 0 0;
   width: 100%;
 }
@@ -352,6 +352,10 @@ nav {
     }
     .date-btn {
       padding: 5px 9px 5px 9px;
+    }
+    
+    .box_container{
+      width: 100%;
     }
     
   }
