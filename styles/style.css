@@ -2,7 +2,7 @@ body {
     font-family: 'Quicksand';
 }
 
-header{
+header,main{
     margin: 0 auto;
     max-width: 1200px;
     border: 1px solid red;
@@ -95,6 +95,87 @@ nav {
     width: 600px;
   }
 
+  /* main section */
+
+ /* curriculam */
+ .curriculum {
+    text-align: center;
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 60px 0;
+  }
+  .card_header{
+    color: rgb(32, 32, 32);
+    font-size: 1.5325rem;
+    font-weight: 700;
+  }
+  .card_p{
+    color: rgb(128, 128, 128);
+    font-family: "Raleway";
+    font-size: 0.9431rem;
+    font-weight: 500;
+  }
+  .curriculam_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 80px
+  }
+  .cucurriculum_header{
+    color: rgb(0, 0, 0);
+    font-size: 2.875rem;
+    font-weight: 700;
+    margin-bottom: 80px;
+  }
+  .arrow{
+    margin-bottom: 30px;
+  }
+  .card_one{
+  
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(
+        180deg,
+        rgb(222, 245, 255),
+        rgba(255, 255, 255, 0) 40%
+      ),
+      rgb(255, 255, 255);
+      
+  }
+
+  .arrow_btn{
+    border-radius: 50%;
+    background: rgb(254, 163, 1);
+    border: none;
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .read{
+    font-weight:700 ;
+    font-size: 1rem;
+    color:rgb(100, 200, 255) ;
+   text-decoration: none;
+  }
+.read_more{
+ margin-bottom: 58px;
+ margin-top: 38px;
+}
+.card_tow{
+  background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.card_three{
+  background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255)
+}
 
 /* media */
   @media screen and (max-width: 576px ) {
@@ -130,7 +211,12 @@ nav {
  .logo{
     justify-content: space-between;
  }
- /* end */
 
+ /* end */
+    .curriculam_card{
+        flex-direction: column;
+        width: 100%;
+       
+    }
     
   }
