@@ -176,6 +176,128 @@ nav {
 .card_three{
   background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255)
 }
+/* story part */
+.story_card{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.story_section {
+  text-align: center;
+  background: url(../assets/bg.png),
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.head_story{
+    color: rgb(0, 0, 0);
+  font-size: 2.875rem;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+
+.box_container {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "a a b c"
+    "a a d e";
+  justify-content: center;
+  margin-bottom: 8%;
+}
+#story_box1 {
+  grid-area: a;
+}
+#story_box2 {
+  grid-area: b;
+}
+#story_box3 {
+  grid-area: c;
+}
+#story_box4 {
+  grid-area: d;
+}
+#story_box5 {
+  grid-area: e;
+}
+.story_box {
+  border-radius: 16px;
+  background-color: rgb(255, 255, 255);
+  text-align: left;
+  box-sizing: border-box;
+  width: 100%;
+}
+.stories-box img {
+  border-radius: 16px 16px 0 0;
+  width: 100%;
+}
+.date-btn {
+  border-radius: 47.93px;
+  color: rgb(255, 255, 255);
+  font-family: "Raleway";
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 18px 10px 18px;
+  border: none;
+}
+#story_box1 .date-btn {
+  background-color: rgb(60, 216, 232);
+  position: relative;
+  top: -3%;
+  right: -6%;
+}
+#story_box2 .date-btn {
+  background-color: rgb(149, 178, 38);
+  position: relative;
+  top: -5%;
+  right: -8%;
+}
+#story_box3 .date-btn {
+  background-color: rgb(93, 88, 240);
+  position: relative;
+  top: -6%;
+  right: -8%;
+}
+#story_box4 .date-btn {
+  background-color: rgb(149, 178, 38);
+  position: relative;
+  top: -6%;
+  right: -8%;
+}
+#story_box5 .date-btn {
+  background-color: rgb(149, 178, 38);
+  position: relative;
+  top: -6%;
+  right: -8%;
+}
+.stories-box-content {
+  padding-left: 30px;
+}
+.stories-box-content h1 {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.stories-box-content p {
+  color: rgb(102, 102, 102);
+  font-family: "Raleway";
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 50px;
+  line-height: 28.76px;
+}
+.stories-box-content h3 {
+  padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* media */
   @media screen and (max-width: 576px ) {
@@ -217,6 +339,19 @@ nav {
         flex-direction: column;
         width: 100%;
        
+    }
+    /* stroy */
+    #story_box1{
+      display: none;
+    }
+    .box_container {
+      grid-template-areas:
+      "b c"
+      "d e";
+      
+    }
+    .date-btn {
+      padding: 5px 9px 5px 9px;
     }
     
   }
