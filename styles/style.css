@@ -2,10 +2,9 @@ body {
     font-family: 'Quicksand';
 }
 
-header,main{
+header,main,footer{
     margin: 0 auto;
     max-width: 1200px;
-    border: 1px solid red;
 }
 
 
@@ -289,9 +288,72 @@ nav {
   padding-bottom: 20px;
 }
 
+/* fotter */
+/* footer {
+  background: rgb(1, 172, 253);
+}
+.footer_section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 110px 0 110px 0;
+}
+.footer_head{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+} */
+ .footer_logo{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+ }
+ .footer_section{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 110px 0 110px 0;
+ }
+
+ .list{
+  
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 0;
+ }
+ .list li{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 500;
+}
+ .icon_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
 
-
+.footer_nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.footer_head p {
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+  font-weight: 400;
+  width: 400px;
+}
+footer{
+  background: rgb(1, 172, 253);
+}
+.kid{
+  color: rgb(255, 255, 255);
+  font-size: 2.6338rem;
+  font-weight: 700;
+}
 
 
 
@@ -357,5 +419,16 @@ nav {
     .box_container{
       width: 100%;
     }
+    /* footer */
+    .footer_section{
+      flex-direction: column;
+    }
+    .footer_head p{
+      width: 100%;
+    } 
+    footer{
+      padding-left: 15px;
+    }
+
     
   }
