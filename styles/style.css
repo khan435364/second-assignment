@@ -288,21 +288,6 @@ nav {
   padding-bottom: 20px;
 }
 
-/* fotter */
-/* footer {
-  background: rgb(1, 172, 253);
-}
-.footer_section {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  padding: 110px 0 110px 0;
-}
-.footer_head{
-  display: flex;
-  align-items: center;
-  gap: 15px;
-} */
  .footer_logo{
   display: flex;
   align-items: center;
@@ -367,6 +352,9 @@ footer{
    .banner {
     flex-direction: column-reverse;
     text-align: center;
+  }
+  .banner_header{
+    width: 100%;
   }
     hr {
         visibility: visible;
